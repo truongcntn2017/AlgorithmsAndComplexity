@@ -42,7 +42,6 @@ string toString(int a, int b, int c, int d){
 }
 
 int main(){
-    int arr[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
     int countAssign;
     int countCompare;
 
@@ -51,7 +50,7 @@ int main(){
     myfile.open("reportcard.csv", ios::out | ios::app); 
     myfile << "n,sum,countAssign,countCompare\n";
 
-    for (int n: arr){
+    for (int n=1; n<=40; n+=1){
         countCompare = 0;
         countAssign = 0;
         int sum = Fibonacci(n, countAssign, countCompare);
