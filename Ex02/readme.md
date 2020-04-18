@@ -55,31 +55,36 @@ int SomeSum(int n, int& countAssign, int& countCompare){
 
 **Function of number of opertions**
 
-$$
-    f(n) = g(n) + h(n)
-$$
+<img src="https://render.githubusercontent.com/render/math?math=f(n) = g(n) %2B h(n)">
 
 **Function of number of assign**
-$$
-    g(n) = 2 + \sum_{i=1}^{n} ( 2 + \sum_{j=n-i}^{i^2}2)
-$$
 
-$$\lim_{n \to \infty} (g(n)) = 2n^3$$
+<img src="https://render.githubusercontent.com/render/math?math=g(n) = 2 %2B \sum_{i=1}^{n} ( 2 %2B \sum_{j=n-i}^{ i^2 }2)">
+
+</br>
+
+<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (g(n)) = 2n^3">
 
 **Function of number of compare**
-$$
-    h(n) = \sum_{i=1}^{n}\sum_{j=n-i}^{i^2}1
-$$
 
-$$\lim_{n \to \infty} (h(n)) = n^3$$
+<img src="https://render.githubusercontent.com/render/math?math=h(n) = \sum_{i=1}^{n}\sum_{j=n-i}^{i^2}1">
+
+</br>
+<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (h(n)) = n^3">
 
 **Comapre with $n^3$**
 
-$$\lim_{n \to \infty} (f(n)) =  \lim_{n \to \infty} (g(n) + h(n))$$
+<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (f(n)) =  \lim_{n \to \infty} (g(n) + h(n))">
 
-$$\lim_{n \to \infty} (f(n)) = 3n^3 $$
+</br>
 
-$$\lim_{n \to \infty} (\frac{f(n)}{n^3}) = 3$$
+<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (f(n)) = 3n^3">
+
+</br>
+
+<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (\frac{f(n)}{n^3}) = 3">
+
+</br>
 
 Therefore, Big-O of someSum is $n^3$
 
