@@ -51,7 +51,7 @@ int SomeSum(int n, int& countAssign, int& countCompare){
 
 |Code   | Notation | Code|
 |-----  | -------- | :--- |
-|Linear | $O(n^3)$ | for (int i = 0; i < n; ++i) { </br> &nbsp; &nbsp; &nbsp; op();</br>&nbsp; &nbsp; &nbsp; for (int j = n-i; j < i*i; ++j) </br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; op(); </br> }|
+|Linear | <img src="https://render.githubusercontent.com/render/math?math=O(n^3)">| for (int i = 0; i < n; ++i) { </br> &nbsp; &nbsp; &nbsp; op();</br>&nbsp; &nbsp; &nbsp; for (int j = n-i; j < i*i; ++j) </br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; op(); </br> }|
 
 **Function of number of opertions**
 
@@ -86,5 +86,5 @@ int SomeSum(int n, int& countAssign, int& countCompare){
 
 </br>
 
-Therefore, Big-O of someSum is $n^3$
+Therefore, Big-O of someSum is  <img src="https://render.githubusercontent.com/render/math?math=n^3">
 
