@@ -74,7 +74,7 @@ int SomeSum(int n, int& countAssign, int& countCompare){
 
 **Comapre with <img src="https://render.githubusercontent.com/render/math?math=n^3">**
 
-<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (f(n)) =  \lim_{n \to \infty} (g(n) + h(n))">
+<img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (f(n)) =  \lim_{n \to \infty} (g(n) %2B h(n))">
 
 </br>
 
@@ -87,4 +87,3 @@ int SomeSum(int n, int& countAssign, int& countCompare){
 </br>
 
 Therefore, Big-O of someSum is  <img src="https://render.githubusercontent.com/render/math?math=n^3">
-
