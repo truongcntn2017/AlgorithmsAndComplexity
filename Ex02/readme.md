@@ -7,14 +7,17 @@ This is example 2 of Algorithm and Complexity Course in VNU - HCMUS
 To running someSum.cpp and visualization.py you just do it
 
 ```bash
+cd AlgorithmsAndComplexity/Ex02/src
 bash someSum.sh
 ```
 
 ## Visualization for someSum
 
+Compare your result with this image.
+
 ![Result](image/someSum.png)
 
-## Explain 
+## Inference 
 
 We are easy to predict complexity of someSum is  n<sup>3</sup> ( O(n<sup>3</sup>)). In first loop, we i variable is from 1 to n. Morever, j variable is from (n - i)  to 
 i<sup>2</sup> . Therefore, someSum's number of operation is equal or less than n<sup>3</sup> operations.
@@ -41,4 +44,42 @@ int SomeSum(int n, int& countAssign, int& countCompare){
     return sum;
 }
 ```
+
+## Prove by limit 
+
+**Common orders of growth.**
+
+|Code   | Notation | Code|
+|-----  | -------- | :--- |
+|Linear | $O(n^3)$ | for (int i = 0; i < n; ++i) { </br> &nbsp; &nbsp; &nbsp; op();</br>&nbsp; &nbsp; &nbsp; for (int j = n-i; j < i*i; ++j) </br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; op(); </br> }|
+
+**Function of number of opertions**
+
+$$
+    f(n) = g(n) + h(n)
+$$
+
+**Function of number of assign**
+$$
+    g(n) = 2 + \sum_{i=1}^{n} ( 2 + \sum_{j=n-i}^{i^2}2)
+$$
+
+$$\lim_{n \to \infty} (g(n)) = 2n^3$$
+
+**Function of number of compare**
+$$
+    h(n) = \sum_{i=1}^{n}\sum_{j=n-i}^{i^2}1
+$$
+
+$$\lim_{n \to \infty} (h(n)) = n^3$$
+
+**Comapre with $n^3$**
+
+$$\lim_{n \to \infty} (f(n)) =  \lim_{n \to \infty} (g(n) + h(n))$$
+
+$$\lim_{n \to \infty} (f(n)) = 3n^3 $$
+
+$$\lim_{n \to \infty} (\frac{f(n)}{n^3}) = 3$$
+
+Therefore, Big-O of someSum is $n^3$
 

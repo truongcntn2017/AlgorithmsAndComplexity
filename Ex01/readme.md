@@ -7,10 +7,13 @@ This is example 1 of Algorithm and Complexity Course in VNU - HCMUS
 To running sumOdd.cpp and visualization.py you just do it
 
 ```bash
+cd AlgorithmsAndComplexity/Ex01/src
 bash sumOdd.sh
 ```
 
 ## Visualization for sumOdd
+
+Compare your result with this image.
 
 ![Result](image/sumOdd.png)
 
@@ -19,10 +22,13 @@ bash sumOdd.sh
 To running fibonacciRecursive.cpp and visualization.py you just do it
 
 ```bash
+cd AlgorithmsAndComplexity/Ex01/src
 bash fibonacciRecursive.sh
 ```
 
 ## Visualization for fibonacciRecursive 
+
+Compare your result with this image.
 
 ![Result](image/fibonacciRecursive.png)
 
@@ -31,10 +37,13 @@ bash fibonacciRecursive.sh
 To running fibonacci.cpp and visualization.py you just do it
 
 ```bash
+cd AlgorithmsAndComplexity/Ex01/src
 bash fibonacci.sh
 ```
 
 ## Visualization for fibonacci
+
+Compare your result with this image.
 
 ![Result](image/fibonacci.png)
 
