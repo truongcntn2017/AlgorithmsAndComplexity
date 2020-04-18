@@ -72,7 +72,7 @@ int SomeSum(int n, int& countAssign, int& countCompare){
 </br>
 <img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (h(n)) = n^3">
 
-**Comapre with $n^3$**
+**Comapre with <img src="https://render.githubusercontent.com/render/math?math=n^3">**
 
 <img src="https://render.githubusercontent.com/render/math?math=\lim_{n \to \infty} (f(n)) =  \lim_{n \to \infty} (g(n) + h(n))">
 
