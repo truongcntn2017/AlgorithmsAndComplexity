@@ -30,8 +30,6 @@ string toString(int a, int b, int c, int d){
 }
 
 int main(){
-    int arr[20] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 
-                    110, 120, 130, 140, 150, 160, 170, 180, 190, 200};
     int countAssign;
     int countCompare;
 
@@ -40,7 +38,7 @@ int main(){
     myfile.open("reportcard.csv", ios::out | ios::app); 
     myfile << "n,sum,countAssign,countCompare\n";
 
-    for (int n: arr){
+    for (int n=10; n<=500 ; n +=10){
         countCompare = 0;
         countAssign = 0;
         int sum = SomeSum(n, countAssign, countCompare);
